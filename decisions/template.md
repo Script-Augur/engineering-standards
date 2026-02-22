@@ -9,6 +9,13 @@ date: "{YYYY-MM-DD when the decision was last updated}"
 
 # {short title, representative of solved problem and found solution}
 
+- [Context and Problem Statement](#context-and-problem-statement)
+- [Decision Drivers](#decision-drivers)
+- [Decision Outcome](#decision-outcome)
+- [Considered Options](#considered-options)
+- [Pros and Cons of the Options](#pros-and-cons-of-the-options)
+- [More Information](#more-information)
+
 ## Context and Problem Statement
 
 {Describe the context and problem statement, e.g., in free form using two to three sentences or in the form of an illustrative story. You may want to articulate the problem in form of a question and add links to collaboration boards or issue management systems.}

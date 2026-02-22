@@ -5,6 +5,13 @@ date: '2026-02-22'
 
 # Use Architecture Decision Records for organization-wide decisions
 
+- [Context and Problem Statement](#context-and-problem-statement)
+- [Decision Drivers](#decision-drivers)
+- [Decision Outcome](#decision-outcome)
+- [Considered Options](#considered-options)
+- [Pros and Cons of the Options](#pros-and-cons-of-the-options)
+- [More Information](#more-information)
+
 ## Context and Problem Statement
 
 We need to capture important architectural and design decisions with their context and consequences so that teams and repositories can understand the "why" behind choices with minimal per-repo documentation. Without a shared approach, rationale is lost, onboarding is harder, and similar decisions are re-debated across the organization.
