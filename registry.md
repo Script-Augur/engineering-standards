@@ -14,6 +14,12 @@ This document lists all accepted decisions, grouped by domain. Each decision’s
 | ------------------------------------------------------------- | -------------------------------------------------------------------------------------- | -------- | ------------- |
 | [0002](decisions/0002-environment-variable-best-practices.md) | Use schema-in-code (e.g. t3-env) for environment variable documentation and validation | Accepted | —             |
 
+## Tech stack
+
+| ID                                                            | Decision                                      | Status   | Superseded by |
+| ------------------------------------------------------------- | --------------------------------------------- | -------- | ------------- |
+| [0003](decisions/0003-use-typescript-full-stack.md)           | Use TypeScript for both front-end and back-end | Accepted | —             |
+
 ---
 
 _Add new domain sections and tables as needed. Set `domain` in the decision’s front matter and link the ID to the decision file._
