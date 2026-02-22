@@ -1,0 +1,63 @@
+---
+description: 'Enforces Architecture Decision Records (ADRs) defined in README.md and decisions/template.md'
+alwaysApply: true
+---
+
+# Cursor Rules for Engineering Standards
+
+This file enforces the decision records and conventions defined in [README.md](README.md) and [decisions/template.md](decisions/template.md). Use both as the source of truth whenever making changes to this repository.
+
+## Core Principles
+
+### Decision doc compliance
+
+- All changes to this repo must comply with the structure and process in README.md and decisions/template.md.
+- When adding or editing decisions, follow the MADR structure and section order defined in the template.
+- Use the term **decisions** and the **`decisions/`** directory (not "ADRs" or `adr/`).
+- When a decision is accepted, add a row to [registry.md](registry.md) in the appropriate domain section. If the decision supersedes another, replace the superseded decision’s row in the registry with the new decision.
+- Set **`domain`** in each decision’s front matter; domain is reflected by section headings in the registry (no Domain column in tables).
+- Respect decision relationships: when superseding, update status and the Superseded by column in the registry.
+
+## Guidelines
+
+### Key conventions (from README and template)
+
+- **File naming:** `decisions/NNNN-title-with-dashes.md` — lowercase, dashes, numeric prefix (e.g. `0002-choose-database.md`).
+- **Front matter:** Include `domain`, `status`, `date`; if the decision’s domain does not match an existing registry section, create a new domain—list it in the front matter and add a new section to the registry. Only introduce new domains when necessary to avoid unnecessary domain expansion.
+- **Content summary:** Every decision has an unordered list of section links at the top: Context and Problem Statement, Decision Drivers, Decision Outcome, Considered Options, Pros and Cons of the Options, More Information.
+- **Section order:** Context and Problem Statement → Decision Drivers → Decision Outcome (with Consequences, Confirmation) → Considered Options (with Pros and Cons of the Options) → More Information. Match the template’s heading levels.
+- **Registry:** Top-level registry.md; domain is the section heading only; table columns are ID, Decision, Status, Superseded by.
+
+### When to create a decision (README)
+
+- Create when: architecturally significant, cross-repo or org-wide, or long-lived.
+- Skip when: limited in scope/time/risk/cost, already covered elsewhere, or temporary (workarounds, experiments, PoCs).
+
+## Implementation
+
+### Adding a new decision
+
+1. Copy [decisions/template.md](decisions/template.md) to `decisions/NNNN-title-with-dashes.md`.
+2. Fill front matter (`domain`, `status`, `date`) and all sections; keep the content summary list at the top.
+3. Add a row to [registry.md](registry.md) under the correct domain section (add a new `## Domain name` section if needed).
+
+### Editing an existing decision
+
+- Preserve front matter, content summary list, and the template’s section order and heading levels.
+- If superseding: update the old decision’s status; add the new decision file and a registry row; set Superseded by in the registry for the old decision.
+
+### Documentation and compliance
+
+- When unsure, re-read README.md and decisions/template.md and align changes to them.
+- Ensure new or modified decision files match the template structure and that registry.md stays in sync.
+
+---
+
+## Reference
+
+For specific guidance, use:
+
+- **[README.md](README.md)** — Terminology, when to create/skip a decision, how to add one, file naming, registry.
+- **[decisions/template.md](decisions/template.md)** — Front matter, sections, content summary, heading structure.
+- **[registry.md](registry.md)** — Accepted decisions by domain; update when accepting or superseding.
+- **decisions/** — Individual decision files; follow the template and set `domain` in front matter.
