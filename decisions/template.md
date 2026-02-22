@@ -1,5 +1,6 @@
 ---
 # Optional metadata. Remove any you do not need.
+domain: "{e.g. Documentation & process | Configuration | …}"
 status: "{proposed | rejected | accepted | deprecated | superseded by NNNN}"
 date: "{YYYY-MM-DD when the decision was last updated}"
 # decision-makers: {list everyone involved in the decision}
@@ -8,6 +9,13 @@ date: "{YYYY-MM-DD when the decision was last updated}"
 ---
 
 # {short title, representative of solved problem and found solution}
+
+- [Context and Problem Statement](#context-and-problem-statement)
+- [Decision Drivers](#decision-drivers)
+- [Decision Outcome](#decision-outcome)
+- [Considered Options](#considered-options)
+- [Pros and Cons of the Options](#pros-and-cons-of-the-options)
+- [More Information](#more-information)
 
 ## Context and Problem Statement
 

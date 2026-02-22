@@ -1,9 +1,17 @@
 ---
+domain: "Documentation & process"
 status: accepted
-date: '2026-02-22'
+date: "2026-02-22"
 ---
 
 # Use Architecture Decision Records for organization-wide decisions
+
+- [Context and Problem Statement](#context-and-problem-statement)
+- [Decision Drivers](#decision-drivers)
+- [Decision Outcome](#decision-outcome)
+- [Considered Options](#considered-options)
+- [Pros and Cons of the Options](#pros-and-cons-of-the-options)
+- [More Information](#more-information)
 
 ## Context and Problem Statement
 
