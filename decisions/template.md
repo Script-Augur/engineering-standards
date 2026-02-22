@@ -1,5 +1,6 @@
 ---
 # Optional metadata. Remove any you do not need.
+domain: "{e.g. Documentation & process | Configuration | …}"
 status: "{proposed | rejected | accepted | deprecated | superseded by NNNN}"
 date: "{YYYY-MM-DD when the decision was last updated}"
 # decision-makers: {list everyone involved in the decision}

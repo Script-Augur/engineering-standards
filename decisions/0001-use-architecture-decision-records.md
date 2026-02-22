@@ -1,6 +1,7 @@
 ---
+domain: "Documentation & process"
 status: accepted
-date: '2026-02-22'
+date: "2026-02-22"
 ---
 
 # Use Architecture Decision Records for organization-wide decisions
