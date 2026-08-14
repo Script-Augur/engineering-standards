@@ -39,10 +39,10 @@ Chosen option: **three GitHub repos under `Script-Augur`**, because it separates
 Locked stack choices:
 
 * **Package manager / runtime:** pnpm + Node (not bun or Deno as the default)
-* **Private registry:** GitHub Packages (`https://npm.pkg.github.com`)
+* **Private registry:** GitHub Packages (`https://npm.pkg.github.com`) — installs always authenticate (even for public packages); local/CI use `NPM_TOKEN` with `read:packages`, or the template CI fallback that resolves from a checkout of `Script-Augur/packages`
 * **UI primitives:** Base UI (`@base-ui/react`) via shadcn — not Radix
 * **Local auth:** machine-wide `NPM_TOKEN` / `~/.npmrc` (not per-repo secrets)
-* **CI auth:** composite action `Script-Augur/packages/.github/actions/setup-script-augur`
+* **CI auth:** composite action `Script-Augur/packages/.github/actions/setup-script-augur` (vendored into the public template because public workflows cannot `uses:` a private-repo action)
 * **Packages vs registry:** Node built-ins, Vite hooks, non-UI state machines → packages only; UI/hooks/layouts/conventions → registry
 
 Auth/tenant libraries already exist as npm packages (`@convex-dev/auth`, `@djpanda/convex-tenants`, `@djpanda/convex-authz`) and are **not** republished under `@script-augur` for v1.
