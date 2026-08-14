@@ -19,6 +19,7 @@ This document lists all accepted decisions, grouped by domain. Each decision’s
 | ID                                                            | Decision                                      | Status   | Superseded by |
 | ------------------------------------------------------------- | --------------------------------------------- | -------- | ------------- |
 | [0003](decisions/0003-use-typescript-full-stack.md)           | Use TypeScript for both front-end and back-end | Accepted | —             |
+| [0004](decisions/0004-script-augur-three-pillar-coding-system.md) | Script-Augur three-pillar coding system (packages, ui-registry, template) | Accepted | —             |
 
 ---
 
